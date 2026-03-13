@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seedfuel | Traditional Indian Nutrition Blend</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* GLOBAL RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background: linear-gradient(to bottom, #e9f7ef, #f4fbf6);
+    color:#2d2d2d;
+    line-height:1.6;
+}
+
+/* HEADER */
+header{
+    background:#ffffff;
+    padding:18px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 15px rgba(0,0,0,0.05);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+header h1{
+    color:#2d6a4f;
+    font-size:26px;
+    font-weight:700;
+}
+
+header a{
+    background:#52b788;
+    padding:10px 22px;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+header a:hover{
+    background:#40916c;
+}
+
+/* HERO */
+.hero{
+    text-align:center;
+    padding:120px 10%;
+    background:linear-gradient(rgba(255,255,255,0.85),rgba(255,255,255,0.85)),
+    url('https://images.unsplash.com/photo-1604908177522-4028a02a2b24?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h2{
+    font-size:42px;
+    color:#1b4332;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:750px;
+    margin:auto;
+    font-size:18px;
+    margin-bottom:35px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 30px;
+    background:#52b788;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:600;
+    margin:10px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#40916c;
+    transform:translateY(-3px);
+}
+
+/* SECTION */
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:34px;
+    color:#2d6a4f;
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+/* CARD */
+.card{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.06);
+    text-align:center;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.1);
+}
+
+.card img{
+    width:80px;
+    margin-bottom:15px;
+}
+
+.card h4{
+    margin-bottom:10px;
+    color:#344e41;
+}
+
+/* INGREDIENT SECTION */
+.ingredients{
+    background:#ffffff;
+    border-radius:20px;
+    margin:0 5%;
+    padding:80px 5%;
+    box-shadow:0 10px 40px rgba(0,0,0,0.05);
+}
+
+.ingredient-card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+/* CTA */
+.cta{
+    text-align:center;
+    background:linear-gradient(to right,#74c69d,#52b788);
+    color:white;
+    padding:80px 10%;
+}
+
+.cta h3{
+    font-size:32px;
+    margin-bottom:20px;
+}
+
+.cta p{
+    margin-bottom:25px;
+}
+
+.cta .btn{
+    background:white;
+    color:#2d6a4f;
+}
+
+.cta .btn:hover{
+    background:#f1f1f1;
+}
+
+/* FOOTER */
+footer{
+    background:#d8f3dc;
+    text-align:center;
+    padding:40px;
+    font-size:14px;
+    color:#1b4332;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .hero h2{
+        font-size:28px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Seedfuel</h1>
+    <a href="https://wa.me/918689890717">Order Now</a>
+</header>
+
+<section class="hero">
+    <h2>Nourish Your Body, Fuel Your Day</h2>
+
+    <p>
+        SeedFuel is a wholesome nutritional mix made from premium nuts, seeds, roasted chana,
+        makhana and skimmed milk powder. Designed for the whole family, it delivers natural
+        energy, protein and essential nutrients in every serving.
+    </p>
+
+    <p>
+        With no added sugar and a powerful blend of almonds, walnuts, cashews and superseeds,
+        SeedFuel makes a delicious and nourishing health drink for kids, adults and elders.
+    </p>
+
+    <a href="https://wa.me/918689890717" class="btn">Order via WhatsApp</a>
+</section>
+
+<section class="ingredients">
+    <h3 class="section-title">Powerful Traditional Ingredients</h3>
+
+    <div class="grid">
+
+        <div class="card ingredient-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSckWw1a4OWnMhyG1LV8tUmB8uzOWa9bjbbYw&s">
+            <h4>Mixed Seeds</h4>
+        </div>
+
+        <div class="card ingredient-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRiHFeEouqtl5TBG1ggVcspCbvKj9FAym4LQ&s">
+            <h4>Roasted Channa</h4>
+        </div>
+
+        <div class="card ingredient-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT40L8vUJilMbIeemtUOX1u4O-gnLdp8DxRwA&s">
+            <h4>Makhana</h4>
+        </div>
+
+        <div class="card ingredient-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6EHAH4JNXDhQ-KS98aW20LFADP4uKfQnuuQ&s">
+            <h4>Almonds & Cashews</h4>
+        </div>
+
+        <!-- NEW INGREDIENT -->
+        <div class="card ingredient-card">
+            <img src="https://t3.ftcdn.net/jpg/07/03/55/26/360_F_703552657_hpXnhbj0k8SbkTU5L5rSsnozgtWx2gfv.jpg">
+            <h4>Skimmed Milk Powder</h4>
+        </div>
+
+    </div>
+</section>
+
+
+<section>
+<h3 class="section-title">Why Choose SeedFuel?</h3>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://img.icons8.com/ios-filled/100/almond.png"/>
+<h4>Superseeds & Nuts Blend</h4>
+<p>Premium seeds and nuts delivering powerful natural nutrition.</p>
+</div>
+
+<div class="card">
+<img src="https://img.icons8.com/ios-filled/100/no-sugar.png"/>
+<h4>No Added Sugar</h4>
+<p>Pure natural nutrition without artificial sweeteners.</p>
+</div>
+
+<div class="card">
+<img src="https://img.icons8.com/ios-filled/100/family.png"/>
+<h4>Family Health Mix</h4>
+<p>Healthy drink suitable for kids, adults and elders.</p>
+</div>
+
+<div class="card">
+<img src="https://img.icons8.com/ios-filled/100/protein.png"/>
+<h4>High Protein & Fiber</h4>
+<p>Supports muscle strength, digestion and daily energy.</p>
+</div>
+
+<div class="card">
+<img src="https://img.icons8.com/ios-filled/100/coffee-to-go.png"/>
+<h4>Easy To Prepare</h4>
+<p>Just mix with milk and enjoy instantly.</p>
+</div>
+
+<div class="card">
+<img src="https://cdn-icons-png.flaticon.com/512/809/809572.png"/>
+<h4>Bone & Immunity Support</h4>
+<p>Rich minerals and nutrients for stronger immunity.</p>
+</div>
+
+</div>
+</section>
+
+
+<section class="use-section">
+
+<h3 class="section-title">How To Use</h3>
+
+<div class="grid">
+
+<div class="card">
+<h4>Step 1</h4>
+<p>Add 1 tablespoon of SeedFuel.</p>
+</div>
+
+<div class="card">
+<h4>Step 2</h4>
+<p>Mix it with one glass of warm or cold milk.</p>
+</div>
+
+<div class="card">
+<h4>Step 3</h4>
+<p>Stir well and enjoy your healthy drink.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="cta">
+    <h3>Retailers & Bulk Orders Welcome</h3>
+    <p>Partner with Seedfuel and offer premium daily nutrition to your customers.</p>
+    <a href="mailto:your@email.com" class="btn">Enquire Now</a>
+</section>
+
+<footer>
+    <p>© 2026 Seedfuel Nutrition | All Rights Reserved</p>
+    <p>FSSAI No: 21526021001425</p>
+    <p>Email: gaikwadritesh636@gmail.com</p>
+</footer>
+
+</body>
+</html>
