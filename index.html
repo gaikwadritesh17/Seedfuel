@@ -12,17 +12,10 @@ body{font-family:'Poppins',sans-serif;background:var(--brown-pale);color:var(--t
 .seeds-bg{position:relative;}
 .seeds-bg::before{content:'';position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cellipse cx='20' cy='20' rx='7' ry='3' fill='%23a0674a' opacity='0.12' transform='rotate(30 20 20)'/%3E%3Ccircle cx='50' cy='50' r='3' fill='%23b5d5a0' opacity='0.18'/%3E%3Ccircle cx='90' cy='120' r='3.5' fill='%23b5d5a0' opacity='0.16'/%3E%3Cellipse cx='80' cy='90' rx='4' ry='1.8' fill='%237aab62' opacity='0.14' transform='rotate(20 80 90)'/%3E%3C/svg%3E");background-size:160px 160px;pointer-events:none;z-index:0;}
 .seeds-bg>*{position:relative;z-index:1;}
-
-/* HEADER */
 header{background:var(--white);padding:16px 8%;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 20px rgba(106,170,72,0.10);position:sticky;top:0;z-index:1000;border-bottom:3px solid var(--pista);}
 .logo{display:flex;align-items:center;}
-nav{display:flex;gap:24px;align-items:center;}
-nav a{text-decoration:none;font-size:14px;color:var(--text-mid);font-weight:500;transition:0.2s;}
-nav a:hover{color:var(--pista-dark);}
 .header-btn{background:var(--pista-dark);padding:10px 22px;color:var(--white);text-decoration:none;border-radius:6px;font-weight:600;font-size:14px;border:2px solid var(--pista-dark);transition:0.3s;}
 .header-btn:hover{background:var(--pista-mid);border-color:var(--pista-mid);transform:translateY(-2px);}
-
-/* HERO */
 .hero{text-align:center;padding:100px 10% 90px;background:linear-gradient(rgba(250,250,246,0.90),rgba(250,250,246,0.93)),url('https://images.unsplash.com/photo-1604210055422-7b9e10e91a53?auto=format&fit=crop&w=1600&q=80');background-size:cover;background-position:center;}
 .hero h2{font-family:'Playfair Display',serif;font-size:48px;color:var(--text-dark);margin-bottom:20px;line-height:1.2;}
 .hero h2 span{color:var(--pista-dark);}
@@ -30,45 +23,29 @@ nav a:hover{color:var(--pista-dark);}
 .hero-btns{margin-top:35px;display:flex;gap:15px;justify-content:center;flex-wrap:wrap;}
 .btn{display:inline-block;padding:13px 28px;border-radius:6px;font-weight:600;text-decoration:none;transition:0.3s;font-size:15px;}
 .btn-primary{background:var(--pista-dark);color:var(--white);border:2px solid var(--pista-dark);}
-.btn-primary:hover{background:var(--pista-mid);border-color:var(--pista-mid);transform:translateY(-3px);}
+.btn-primary:hover{background:var(--pista-mid);transform:translateY(-3px);}
 .btn-white{background:var(--white);color:var(--brown);border:2px solid var(--white);font-weight:700;}
-.btn-white:hover{background:var(--pista-light);border-color:var(--pista-light);transform:translateY(-3px);}
-
-/* TRUST BAR */
 .trust-bar{background:var(--pista);padding:18px 10%;display:flex;justify-content:center;gap:50px;flex-wrap:wrap;border-top:2px solid var(--pista-dark);border-bottom:2px solid var(--pista-dark);}
 .trust-item{display:flex;align-items:center;gap:8px;font-weight:600;font-size:14px;color:var(--text-dark);}
 .trust-item span:first-child{font-size:20px;}
-
-/* SECTIONS */
 section{padding:80px 10%;}
 .section-title{text-align:center;font-family:'Playfair Display',serif;font-size:36px;color:var(--text-dark);margin-bottom:12px;}
 .section-sub{text-align:center;color:var(--text-mid);font-size:15px;margin-bottom:50px;}
 .section-line{width:60px;height:4px;background:var(--brown-light);margin:12px auto 20px;border-radius:2px;}
-
-/* GRID & CARDS */
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px;}
 .card{background:var(--white);padding:28px 24px;border-radius:14px;box-shadow:0 8px 30px rgba(106,170,72,0.08);text-align:center;transition:0.3s;border:1.5px solid transparent;}
 .card:hover{transform:translateY(-8px);box-shadow:0 20px 40px rgba(106,170,72,0.15);border-color:var(--pista);}
 .card h4{margin:12px 0 8px;color:var(--text-dark);font-size:16px;font-family:'Playfair Display',serif;}
 .card p{font-size:14px;color:var(--text-mid);}
-
-/* INGREDIENTS */
 .ingredients-section{background:var(--white);position:relative;}
 .ingredient-card img{width:100%;height:170px;object-fit:cover;border-radius:10px;margin-bottom:14px;border:3px solid var(--pista-light);transition:0.3s;}
 .ingredient-card:hover img{border-color:var(--pista-dark);}
-
-/* WHY */
 .why-section{background:var(--brown-pale);}
 .card-icon{width:64px;height:64px;background:var(--pista-light);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;}
 .card-icon img{width:34px;height:34px;}
-
-/* HOW TO USE */
 .use-section{background:var(--pista-light);position:relative;}
-.use-section.seeds-bg::before{opacity:0.5;}
 .step-card{background:var(--white);border-top:5px solid var(--brown-light);}
 .step-num{font-family:'Playfair Display',serif;font-size:42px;color:var(--brown-light);opacity:0.5;line-height:1;margin-bottom:8px;}
-
-/* PRICING */
 .pricing-section{background:var(--white);}
 .price-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px;}
 .price-card{background:var(--brown-pale);border-radius:14px;padding:30px 22px;text-align:center;border:2px solid var(--pista-light);transition:0.3s;}
@@ -79,10 +56,7 @@ section{padding:80px 10%;}
 .price-amount{font-size:30px;font-weight:700;color:var(--brown);margin:10px 0;}
 .price-amount span{font-size:14px;font-weight:400;color:var(--text-mid);}
 .price-card p{font-size:13px;color:var(--text-mid);margin-bottom:18px;}
-.price-btn{display:inline-block;padding:10px 22px;background:var(--pista-dark);color:var(--white);border-radius:6px;font-size:14px;font-weight:600;text-decoration:none;transition:0.3s;}
-.price-btn:hover{background:var(--pista-mid);}
-
-/* TESTIMONIALS */
+.price-btn{display:inline-block;padding:10px 22px;background:var(--pista-dark);color:var(--white);border-radius:6px;font-size:14px;font-weight:600;text-decoration:none;}
 .testimonials-section{background:var(--brown-pale);}
 .testimonial-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;}
 .testimonial-card{background:var(--white);border-radius:14px;padding:24px;border-left:4px solid var(--pista-dark);box-shadow:0 8px 30px rgba(106,170,72,0.08);}
@@ -90,39 +64,19 @@ section{padding:80px 10%;}
 .testimonial-card p{font-size:14px;color:var(--text-mid);font-style:italic;margin-bottom:14px;line-height:1.6;}
 .testimonial-name{font-size:14px;font-weight:600;color:var(--text-dark);}
 .testimonial-loc{font-size:12px;color:var(--text-mid);}
-
-/* CTA */
-.cta{text-align:center;background:linear-gradient(135deg,var(--pista-mid) 0%,var(--pista-dark) 100%);color:var(--white);padding:90px 10%;position:relative;overflow:hidden;}
+.cta{text-align:center;background:linear-gradient(135deg,var(--pista-mid) 0%,var(--pista-dark) 100%);color:var(--white);padding:90px 10%;}
 .cta h3{font-family:'Playfair Display',serif;font-size:36px;margin-bottom:16px;}
 .cta p{font-size:16px;opacity:0.9;margin-bottom:30px;max-width:500px;margin-left:auto;margin-right:auto;}
-
-/* FOOTER */
 footer{background:var(--pista-light);color:var(--text-dark);text-align:center;padding:45px 10%;border-top:3px solid var(--brown-light);}
 footer p{font-size:14px;margin-bottom:6px;color:var(--text-mid);}
 footer p:first-child{font-family:'Playfair Display',serif;font-size:20px;color:var(--text-dark);margin-bottom:14px;}
 footer a{color:var(--brown);}
 .footer-divider{width:40px;height:2px;background:var(--brown-light);margin:12px auto;border-radius:2px;}
-.footer-social{display:flex;justify-content:center;gap:16px;margin-top:14px;}
-.footer-social a{font-size:13px;color:var(--brown);font-weight:600;text-decoration:none;padding:6px 14px;border:1.5px solid var(--brown-light);border-radius:20px;transition:0.2s;}
-.footer-social a:hover{background:var(--pista);border-color:var(--pista-dark);}
-
-/* FLOATING WA */
-.wa-float{position:fixed;bottom:28px;right:28px;background:#25d366;color:white;border-radius:50%;width:56px;height:56px;display:flex;align-items:center;justify-content:center;font-size:26px;text-decoration:none;box-shadow:0 4px 15px rgba(37,211,102,0.4);z-index:9999;transition:0.3s;}
-.wa-float:hover{transform:scale(1.1);}
-
-/* RESPONSIVE */
-@media(max-width:768px){
-  .hero h2{font-size:30px;}
-  .trust-bar{gap:20px;}
-  .section-title{font-size:26px;}
-  nav{gap:12px;}
-  nav a{font-size:12px;}
-}
+.wa-float{position:fixed;bottom:28px;right:28px;background:#25d366;color:white;border-radius:50%;width:56px;height:56px;display:flex;align-items:center;justify-content:center;font-size:26px;text-decoration:none;box-shadow:0 4px 15px rgba(37,211,102,0.4);z-index:9999;}
+@media(max-width:768px){.hero h2{font-size:30px;}.trust-bar{gap:20px;}.section-title{font-size:26px;}}
 </style>
 </head>
 <body>
-
-<!-- HEADER -->
 <header>
   <div class="logo">
     <svg width="165" height="42" viewBox="0 0 165 42" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -136,8 +90,6 @@ footer a{color:var(--brown);}
   </div>
   <a href="https://ig.me/m/seedfuel" class="header-btn">Order Now</a>
 </header>
-
-<!-- HERO -->
 <section class="hero seeds-bg">
   <h2>Nourish Your Body,<br><span>Fuel Your Day</span></h2>
   <p>SeedFuel is a wholesome nutritional mix made from premium nuts, seeds, roasted chana, makhana and skimmed milk powder.</p>
@@ -146,8 +98,6 @@ footer a{color:var(--brown);}
     <a href="https://wa.me/918689890717" class="btn btn-primary">📱 Order via WhatsApp</a>
   </div>
 </section>
-
-<!-- TRUST BAR -->
 <div class="trust-bar">
   <div class="trust-item"><span>✅</span><span>FSSAI Certified</span></div>
   <div class="trust-item"><span>🌱</span><span>100% Natural</span></div>
@@ -155,8 +105,6 @@ footer a{color:var(--brown);}
   <div class="trust-item"><span>👨‍👩‍👧</span><span>For Whole Family</span></div>
   <div class="trust-item"><span>💪</span><span>High Protein</span></div>
 </div>
-
-<!-- INGREDIENTS -->
 <section class="ingredients-section seeds-bg" id="ingredients">
   <h3 class="section-title">Powerful Traditional Ingredients</h3>
   <div class="section-line"></div>
@@ -169,8 +117,6 @@ footer a{color:var(--brown);}
     <div class="card ingredient-card"><img src="https://t3.ftcdn.net/jpg/07/03/55/26/360_F_703552657_hpXnhbj0k8SbkTU5L5rSsnozgtWx2gfv.jpg"><h4>Skimmed Milk Powder</h4><p>Rich source of calcium and protein for strong bones.</p></div>
   </div>
 </section>
-
-<!-- WHY SEEDFUEL -->
 <section class="why-section" id="why">
   <h3 class="section-title">Why Choose SeedFuel?</h3>
   <div class="section-line"></div>
@@ -184,8 +130,6 @@ footer a{color:var(--brown);}
     <div class="card"><div class="card-icon"><img src="https://cdn-icons-png.flaticon.com/512/809/809572.png"/></div><h4>Bone & Immunity Support</h4><p>Rich minerals and nutrients for stronger immunity.</p></div>
   </div>
 </section>
-
-<!-- HOW TO USE -->
 <section class="use-section seeds-bg">
   <h3 class="section-title">How To Use</h3>
   <div class="section-line"></div>
@@ -196,36 +140,16 @@ footer a{color:var(--brown);}
     <div class="card step-card"><div class="step-num">03</div><h4>Enjoy</h4><p>Stir well and enjoy your nutritious daily drink!</p></div>
   </div>
 </section>
-
-<!-- PRICING -->
 <section class="pricing-section" id="pricing">
   <h3 class="section-title">Simple Pricing</h3>
   <div class="section-line"></div>
   <p class="section-sub">Choose the pack that fits your family</p>
   <div class="price-grid">
-    <div class="price-card">
-      <h4>Starter Pack</h4>
-      <div class="price-amount">₹299 <span>/ 250g</span></div>
-      <p>Perfect for trying SeedFuel for the first time</p>
-      <a href="https://wa.me/918689890717" class="price-btn">Order Now</a>
-    </div>
-    <div class="price-card featured">
-      <div class="price-badge">Most Popular</div>
-      <h4>Family Pack</h4>
-      <div class="price-amount">₹549 <span>/ 500g</span></div>
-      <p>Best value for daily family nutrition</p>
-      <a href="https://wa.me/918689890717" class="price-btn">Order Now</a>
-    </div>
-    <div class="price-card">
-      <h4>Bulk Pack</h4>
-      <div class="price-amount">₹999 <span>/ 1kg</span></div>
-      <p>For retailers and large families</p>
-      <a href="https://wa.me/918689890717" class="price-btn">Order Now</a>
-    </div>
+    <div class="price-card"><h4>Starter Pack</h4><div class="price-amount">₹299 <span>/ 200g</span></div><p>Perfect for trying SeedFuel for the first time</p><a href="https://wa.me/918689890717" class="price-btn">Order Now</a></div>
+    <div class="price-card featured"><div class="price-badge">Most Popular</div><h4>Family Pack</h4><div class="price-amount">₹549 <span>/ 500g</span></div><p>Best value for daily family nutrition</p><a href="https://wa.me/918689890717" class="price-btn">Order Now</a></div>
+    <div class="price-card"><h4>Bulk Pack</h4><div class="price-amount">₹999 <span>/ 500g x2</span></div><p>For retailers and large families</p><a href="https://wa.me/918689890717" class="price-btn">Order Now</a></div>
   </div>
 </section>
-
-<!-- TESTIMONIALS -->
 <section class="testimonials-section">
   <h3 class="section-title">What Customers Say</h3>
   <div class="section-line"></div>
@@ -236,19 +160,19 @@ footer a{color:var(--brown);}
     <div class="testimonial-card"><div class="stars">★★★★★</div><p>"My elderly parents enjoy this daily. Doctor approved and they love the taste!"</p><div class="testimonial-name">Anita Desai</div><div class="testimonial-loc">Nashik, Maharashtra</div></div>
   </div>
 </section>
-
-<!-- CTA -->
 <section class="cta" id="contact">
   <h3>Retailers & Bulk Orders Welcome</h3>
   <p>Partner with Seedfuel and offer premium daily nutrition to your customers.</p>
-  <a href="/cdn-cgi/l/email-protection#d8bfb9b1b3afb9bcaab1acbdabb0eeebee98bfb5b9b1b4f6bbb7b5" class="btn btn-white">✉️ Enquire Now</a>
+  <a href="mailto:gaikwadritesh636@gmail.com" class="btn btn-white">✉️ Enquire Now</a>
 </section>
-
-<!-- FOOTER -->
 <footer>
   <p>Seedfuel Nutrition</p>
   <div class="footer-divider"></div>
   <p>© 2026 Seedfuel Nutrition | All Rights Reserved</p>
   <p>FSSAI No: 21526021001425</p>
-  <p>📧 <a href="/cdn-cgi/l/email-protection#294e4840425e484d5b405d4c5a411f1a1f694e44484045074a4644"><span class="__cf_email__" data-cfemail="0562646c6e726461776c7160766d333633456268646c692b666a68">[email&#160;protected]</span></a></p>
+  <p>📧 <a href="mailto:gaikwadritesh636@gmail.com">gaikwadritesh636@gmail.com</a></p>
   <p>📱 <a href="https://wa.me/918689890717">+91 86898 90717</a></p>
+</footer>
+<a href="https://wa.me/918689890717" class="wa-float">💬</a>
+</body>
+</html>
